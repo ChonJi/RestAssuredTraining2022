@@ -9,11 +9,11 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <baseUrl>https://api.trello.com/1/</baseUrl>
-        <key></key>
-        <token></token>
-        <maven.compiler.source>15</maven.compiler.source>
-        <maven.compiler.target>15</maven.compiler.target>
+        <base.uri>https://api.trello.com/1/</base.uri>
+        <key>type_your_trello_key_here</key>
+        <token>type_your_trello_key_here</token>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
     </properties>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
@@ -49,7 +49,13 @@
             <version>2.2</version>
             <scope>test</scope>
         </dependency>
-
-
     </dependencies>
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+    </build>
 </project>
