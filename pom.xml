@@ -10,8 +10,8 @@
 
     <properties>
         <base.uri>https://api.trello.com/1/</base.uri>
-        <key>type_your_trello_key_here</key>
-        <token>type_your_trello_key_here</token>
+        <key>38d4e298d53b8364f236bed1520bb7df</key>
+        <token>1c240c702790169d97c697a7097a3c5dee12e42603beff630b8c14f53767d302</token>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
@@ -51,6 +51,11 @@
         </dependency>
     </dependencies>
     <build>
+        <testResources>
+            <testResource>
+                <directory>src/main/resources</directory>
+            </testResource>
+        </testResources>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
