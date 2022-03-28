@@ -1,13 +1,12 @@
 package tests;
 
+import helpers.ReadProperties;
 import io.restassured.http.ContentType;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.*;
 
 public class BaseTest {
-
     private static ReadProperties readProperties = new ReadProperties();
 
     @BeforeAll
@@ -18,10 +17,5 @@ public class BaseTest {
                 .queryParam("token", readProperties.readToken())
                 .when()
                 .contentType(ContentType.JSON);
-    }
-
-    @Test
-    public void dupa() {
-
     }
 }
