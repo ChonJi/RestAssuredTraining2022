@@ -17,7 +17,6 @@ public class BaseTest {
         requestSpecification = given()
                 .queryParam("key", readProperties.readKey())
                 .queryParam("token", readProperties.readToken())
-                .when()
                 .contentType(ContentType.JSON);
     }
 }
