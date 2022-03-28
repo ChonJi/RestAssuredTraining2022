@@ -6,12 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ChRA032022" />
         <module name="RestAssuredTraining2022" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="17">
-      <module name="ChRA032022" target="17" />
       <module name="RestAssuredTraining2022" target="17" />
     </bytecodeTargetLevel>
   </component>

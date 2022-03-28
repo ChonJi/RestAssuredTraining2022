@@ -7,10 +7,12 @@ import org.junit.jupiter.api.BeforeAll;
 import static io.restassured.RestAssured.*;
 
 public class BaseTest {
-    private static ReadProperties readProperties = new ReadProperties();
+
+    protected final static String BOARDS_URL = "members/me/boards";
 
     @BeforeAll
     public static void setUp() {
+        ReadProperties readProperties = new ReadProperties();
         baseURI = readProperties.readBaseUri();
         requestSpecification = given()
                 .queryParam("key", readProperties.readKey())
